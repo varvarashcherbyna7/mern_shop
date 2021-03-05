@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import Rating from "./Rating";
 
 export default function Product(props) {
-    const { product } = props;
+    const {product} = props;
     return (
         <div className="card">
             <NavLink to={`/product/${product._id}`}>

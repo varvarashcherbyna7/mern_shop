@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
-import { data } from "../data";
+import {NavLink} from "react-router-dom";
+import {data} from "../data";
 import Rating from "../components/Rating";
 
 export default function ProductScreen(props) {
@@ -41,7 +41,7 @@ export default function ProductScreen(props) {
                             <li>
                                 <div className="row">
                                     <div>Price</div>
-                                    <div className="price">${product.price }</div>
+                                    <div className="price">${product.price}</div>
                                 </div>
                             </li>
                             <li>
@@ -50,8 +50,8 @@ export default function ProductScreen(props) {
                                     <div>
                                         {
                                             product.countInStock > 0
-                                            ? <span className="success">In Stock</span>
-                                            : <span className="error">Unavailable</span>
+                                                ? <span className="success">In Stock</span>
+                                                : <span className="error">Unavailable</span>
                                         }
                                     </div>
                                 </div>
