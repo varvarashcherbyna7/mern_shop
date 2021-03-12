@@ -96,6 +96,7 @@ export default function ProductScreen(props) {
                                                                         }
                                                                     </select>
                                                                 </div>
+
                                                             </div>
                                                         </li>
                                                         <li>

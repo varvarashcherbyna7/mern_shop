@@ -19,6 +19,7 @@ body
   height: 100%
 
 /* Layout */
+
 .grid-container
   display: grid
   grid-template-areas: 'header' 'main' 'footer'
@@ -40,8 +41,6 @@ body
     color: $mainWhite
 
   /* Common */
-
-
 
   h1
     font-size: 1.8rem
@@ -101,7 +100,6 @@ body
 
   /* Header */
 
-
   header a
     color: $mainWhite
     padding: 1rem
@@ -137,24 +135,27 @@ body
     .col-2
       flex: 2 1 50rem
 
+    .min-30
+      min-width: 30rem
+
 
   /* Image */
-
-
 
   img
     border-radius: 0.5rem
 
-  img.large
+  img.small
+    max-width: 5rem
     width: 100%
 
   img.medium
     max-width: 29rem
     width: 100%
 
+  img.large
+    width: 100%
+
   /* Card */
-
-
 
   .card
     border: 0.1rem solid $mainGrey
@@ -173,8 +174,6 @@ body
 
   /* Rating */
 
-
-
   .rating span
     color: $goldColor
     margin: 0.1rem
@@ -183,8 +182,6 @@ body
     color: $ratingColorGrey
 
   /* Alert */
-
-
 
   .success
     color: $successColor
