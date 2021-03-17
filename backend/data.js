@@ -1,4 +1,20 @@
+import bcrypt from 'bcryptjs';
+
 export const data = {
+    users: [
+        {
+            name: 'Varvara',
+            email: 'admin_mongodb@ukr.net',
+            password: bcrypt.hashSync('1234', 8),
+            isAdmin: true,
+        },
+        {
+            name: 'Alex',
+            email: 'user@example.com',
+            password: bcrypt.hashSync('1234', 8),
+            isAdmin: false,
+        },
+    ],
     products: [
         {
             _id: '1',
